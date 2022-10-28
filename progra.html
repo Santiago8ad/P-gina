@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Mi primer página web</title>
+    <style>
+        /*Elementos de la pagina junto con el body  */
+        html, body{
+            display:flex;
+            height: 100%;
+            flex-direction: column;
+            margin: 0px;
+
+        }
+
+        #titulo{
+            background-color: rgb(27, 134, 0);
+            color: rgb(0, 0, 0);
+        }
+
+        #container{
+            display: flex;
+            background-color: rgb(60, 165, 0);
+            color: rgb(0, 0, 0);
+            height: 60%;
+            padding-left: 30px;
+        }
+
+        .parrafo{
+         text-align: justify;
+         border: 5px solid;
+         height: 25%;
+         border-color: rgb(0, 255, 34);
+         border-radius: 10px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .conborde{
+            border-color:rgb(0, 211, 95);
+            border: 10px solid;
+        }
+
+        .principal{
+         
+         padding: 0px 30px;
+         width: 70%;
+        }
+/* FIN */
+
+/* Elementos de las listas utilizados en la pagina */
+        header{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            background-color: rgb(155, 207, 238) ;
+            height: 5%;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .lateral{
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+            width: 20%;
+            background-color: rgb(3, 180, 83);
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul li:hover{
+         color: rgb(0, 255, 0);
+        }
+
+         ol li{
+         list-style: none;
+         display: flex;
+        }
+
+        ul li{
+         display: inline;
+        }
+
+        ol li:hover{
+         color: rgb(0, 255, 0);
+        }
+       
+/* FIN */
+
+/* Literalmente pie de pagina */
+.pie_pagina{
+            background-color: rgb(40, 136, 56);
+            color: rgb(0, 0, 0);
+            display: flex;
+            height: 30%;
+        }
+     /* FIN */
+     
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Principal</li>
+                <li>Información</li>
+                <li>Contacto</li> 
+                <li>Iniciar sesión</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container" class="container">
+        <section class="principal">
+            <h1 id="titulo" class="conborde"> 
+                MI PAGINA WEB
+            </h1>
+
+            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto aspernatur illum, cumque odio dolores maxime fugit rem voluptatem blanditiis ducimus voluptas ipsa culpa beatae tenetur ea temporibus unde alias est!</p>
+            <img id="imagen" class="conborde" src="Image/PEPE.png" alt="PEPE" height="200px" width="200px"> 
+         
+            <br>
+            <input type="text" id="texto">
+            <input type="submit" id="enviar">
+
+        </section>
+         <aside class="lateral">
+            <ol>
+                <li>Enlace 1</li>
+                <li>Enlace 2</li>
+                <li>Enlace 3</li>
+            </ol>
+         </aside>
+    </div>
+    <footer class="pie_pagina">
+        <p>Copyright de mi pagina, pagina creada pr SANTI 7u7</p>
+    </footer>
+</body>
+</html>
